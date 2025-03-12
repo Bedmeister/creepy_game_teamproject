@@ -1,0 +1,31 @@
+[gd_scene load_steps=6 format=3 uid="uid://ce1ajp6icq74a"]
+
+[ext_resource type="Texture2D" uid="uid://yihgu78ibgyd" path="res://Assets/Sprites/Player/spr_player_idle.png" id="1_7obyx"]
+[ext_resource type="Script" path="res://hero.gd" id="1_7xkeb"]
+[ext_resource type="Texture2D" uid="uid://bbfl43fqpsvey" path="res://Light.png" id="2_ul8ox"]
+[ext_resource type="Script" path="res://point_light_2d.gd" id="4_2w8kg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h8vtb"]
+size = Vector2(119, 75)
+
+[node name="CharacterBody2D" type="CharacterBody2D"]
+script = ExtResource("1_7xkeb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7obyx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-5, 3)
+shape = SubResource("RectangleShape2D_h8vtb")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-0.705658, 10)
+rotation = 1.56536
+scale = Vector2(0.372029, 0.479543)
+color = Color(1, 0.783833, 0.75517, 1)
+shadow_enabled = true
+texture = ExtResource("2_ul8ox")
+offset = Vector2(573.845, -7.10747)
+script = ExtResource("4_2w8kg")
