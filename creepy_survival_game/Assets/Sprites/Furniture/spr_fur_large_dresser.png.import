@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://kgcp2kmw87gs"
-path="res://.godot/imported/large_dresser.png-4244401e1d9493ca240e22d3b7bd3218.ctex"
+path="res://.godot/imported/spr_fur_large_dresser.png-f444fc53b07cfd03a2542003c37b591a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Furniture/large_dresser.png"
-dest_files=["res://.godot/imported/large_dresser.png-4244401e1d9493ca240e22d3b7bd3218.ctex"]
+source_file="res://Assets/Sprites/Furniture/spr_fur_large_dresser.png"
+dest_files=["res://.godot/imported/spr_fur_large_dresser.png-f444fc53b07cfd03a2542003c37b591a.ctex"]
 
 [params]
 

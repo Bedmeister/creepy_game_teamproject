@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpebv2mtrflrn"
-path="res://.godot/imported/crafting_table.png-1ff0be6b20c893f5e98821b421d62ce6.ctex"
+uid="uid://cib8ddxxv48vj"
+path="res://.godot/imported/spr_fur_bathtub.png-0176e2340386f7d26f3a964772fc579a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprites/Furniture/crafting_table.png"
-dest_files=["res://.godot/imported/crafting_table.png-1ff0be6b20c893f5e98821b421d62ce6.ctex"]
+source_file="res://Assets/Sprites/Furniture/spr_fur_bathtub.png"
+dest_files=["res://.godot/imported/spr_fur_bathtub.png-0176e2340386f7d26f3a964772fc579a.ctex"]
 
 [params]
 
