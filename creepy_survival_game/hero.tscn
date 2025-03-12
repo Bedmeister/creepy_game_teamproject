@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://yihgu78ibgyd" path="res://Assets/Sprites/Player/spr_player_idle.png" id="1_7obyx"]
 [ext_resource type="Script" path="res://hero.gd" id="1_7xkeb"]
-[ext_resource type="Texture2D" path="res://Light.png" id="2_ul8ox"]
+[ext_resource type="Texture2D" uid="uid://drpb5wejxk6p6" path="res://Light.png" id="2_ul8ox"]
 [ext_resource type="Script" path="res://point_light_2d.gd" id="4_2w8kg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h8vtb"]
