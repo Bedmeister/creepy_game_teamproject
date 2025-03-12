@@ -1,0 +1,4 @@
+res://Scenes/Main.tscn
+res://Scenes/testFloor.tscn
+res://Scenes/hero.tscn
+res://Scripts/hero.gd

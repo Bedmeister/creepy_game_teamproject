@@ -12,6 +12,7 @@ size = Vector2(119, 75)
 script = ExtResource("1_7xkeb")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
 texture = ExtResource("1_7obyx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
