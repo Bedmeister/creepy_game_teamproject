@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uygul6e83hl5"
-path="res://.godot/imported/brickTileset.png-bb06166f857e2def45e3bb906f890b04.ctex"
+uid="uid://djojemf5lky1l"
+path="res://.godot/imported/spr_fur_bed.png-a195cdc42aebfd56d851e725262e5842.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://brickTileset.png"
-dest_files=["res://.godot/imported/brickTileset.png-bb06166f857e2def45e3bb906f890b04.ctex"]
+source_file="res://Assets/Sprites/Furniture/spr_fur_bed.png"
+dest_files=["res://.godot/imported/spr_fur_bed.png-a195cdc42aebfd56d851e725262e5842.ctex"]
 
 [params]
 

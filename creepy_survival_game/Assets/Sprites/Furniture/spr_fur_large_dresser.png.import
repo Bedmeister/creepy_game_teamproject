@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bbfl43fqpsvey"
-path="res://.godot/imported/Light.png-434aab4fe64b7d35096e8d62977f183c.ctex"
+uid="uid://kgcp2kmw87gs"
+path="res://.godot/imported/spr_fur_large_dresser.png-f444fc53b07cfd03a2542003c37b591a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Light.png"
-dest_files=["res://.godot/imported/Light.png-434aab4fe64b7d35096e8d62977f183c.ctex"]
+source_file="res://Assets/Sprites/Furniture/spr_fur_large_dresser.png"
+dest_files=["res://.godot/imported/spr_fur_large_dresser.png-f444fc53b07cfd03a2542003c37b591a.ctex"]
 
 [params]
 

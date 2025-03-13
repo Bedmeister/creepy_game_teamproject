@@ -8,6 +8,8 @@ const movementSpeed = 6
 
 
 func _physics_process(delta: float) -> void:
+	rotate_player()
+	
 	# Add the gravity.
 	var velocity = Vector2 (0,0);
 	# using movement 
@@ -22,3 +24,9 @@ func _physics_process(delta: float) -> void:
 			velocity += Vector2.DOWN * movementSpeed
 			
 	position += velocity.normalized() * movementSpeed
+
+
+
+func rotate_player(): #rotates player with mouse
+	var direction = get_global_mouse_position()
+	look_at(direction)
