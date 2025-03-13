@@ -5,25 +5,25 @@
 [ext_resource type="Texture2D" uid="uid://h1bmxiyrdssj" path="res://Assets/Light.png" id="3_atv56"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h8vtb"]
-size = Vector2(36, 23)
+size = Vector2(47, 27)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
 script = ExtResource("1_tgxck")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(3, 2)
+position = Vector2(4, 3)
 rotation = 1.5708
-scale = Vector2(0.521305, 0.522139)
+scale = Vector2(0.695771, 0.662976)
 texture = ExtResource("1_gt52t")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -1.5)
 shape = SubResource("RectangleShape2D_h8vtb")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(2, 2)
 
 [node name="PointLight2D" type="PointLight2D" parent="."]
-position = Vector2(199, -157)
+position = Vector2(204, -157)
 rotation = 1.56536
 scale = Vector2(0.179849, 0.758887)
 color = Color(1, 0.783833, 0.75517, 1)
