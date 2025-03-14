@@ -1,0 +1,7 @@
+res://Scenes/Main.tscn
+res://Scenes/testFloor.tscn
+res://Scenes/Player/hero.tscn
+res://Scenes/Player/my_hero.tscn
+res://Scenes/Furniture/small_dresser.tscn
+res://Scripts/my_hero.gd
+res://Scenes/Furniture/furniture.gd

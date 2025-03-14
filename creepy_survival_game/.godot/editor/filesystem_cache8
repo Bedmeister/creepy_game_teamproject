@@ -1,5 +1,5 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1741909111
+::res://::1741916611
 ::res://Assets/::1741909049
 ::res://Assets/Sprites/::1741909115
 icon.svg::CompressedTexture2D::7732230646880127224::1741909049::1741909115::1::::<><>::
@@ -24,12 +24,15 @@ Light.png::CompressedTexture2D::2467652570170675252::1741909049::1741909115::1::
 spr_player_idle.png::CompressedTexture2D::1701484104468900979::1741909049::1741909115::1::::<><>::
 ::res://Assets/Sprites/Tilemaps/::1741909115
 brickTileset.png::CompressedTexture2D::1453722582565517280::1741909049::1741909115::1::::<><>::
-::res://Scenes/::1741916031
-hero.tscn::PackedScene::5107287471795041850::1741909049::0::1::::<><>::uid://yihgu78ibgyd::::res://Assets/Sprites/Player/spr_player_idle.png<>res://Scripts/hero.gd<>uid://bbfl43fqpsvey::::res://Assets/Sprites/Player/Light.png<>res://Scripts/point_light_2d.gd
+::res://Scenes/::1741916611
 Main.tscn::PackedScene::3808381130741972938::1741909049::0::1::::<><>::uid://ce1ajp6icq74a::::res://Scenes/hero.tscn<>uid://bcgmm3kwwoixs::::res://Scenes/testFloor.tscn
+my_hero.tscn::PackedScene::5107287471795041850::1741916467::0::1::::<><>::uid://yihgu78ibgyd::::res://Assets/Sprites/Player/spr_player_idle.png<>res://Scripts/hero.gd<>uid://bbfl43fqpsvey::::res://Assets/Sprites/Player/Light.png<>res://Scripts/point_light_2d.gd
 testFloor.tscn::PackedScene::2539936158064968016::1741909049::0::1::::<><>::uid://difsydw632yey::::res://Assets/Sprites/icon.svg<>uid://uygul6e83hl5::::res://Assets/Sprites/Tilemaps/brickTileset.png
-::res://Scenes/house/::1741916467
-my_hero.tscn::PackedScene::-1::1741916467::0::1::::<><>::
+::res://Scenes/Furniture/::1741916585
+::res://Scenes/house/::1741916571
+Compact_house.tscn::PackedScene::874137208355649569::1741916571::0::1::::<><>::uid://dbxoco20magdv::::res://Assets/brickTileset.png<>uid://dsrgi57nhiqa5::::res://Scenes/hero.tscn<>res://Scripts/player.gd
+::res://Scenes/Player/::1741916611
+hero.tscn::PackedScene::5107287471795041850::1741909049::0::1::::<><>::uid://yihgu78ibgyd::::res://Assets/Sprites/Player/spr_player_idle.png<>res://Scripts/hero.gd<>uid://bbfl43fqpsvey::::res://Assets/Sprites/Player/Light.png<>res://Scripts/point_light_2d.gd
 ::res://Scripts/::1741909049
 hero.gd::GDScript::-1::1741909049::0::1::::<>CharacterBody2D<>::
 point_light_2d.gd::GDScript::-1::1741909049::0::1::::<>PointLight2D<>::

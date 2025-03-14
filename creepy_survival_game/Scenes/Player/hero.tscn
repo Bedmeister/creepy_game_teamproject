@@ -1,19 +1,19 @@
 [gd_scene load_steps=6 format=3 uid="uid://ce1ajp6icq74a"]
 
-[ext_resource type="Texture2D" uid="uid://yihgu78ibgyd" path="res://Assets/Sprites/Player/spr_player_idle.png" id="1_7obyx"]
-[ext_resource type="Script" path="res://Scripts/hero.gd" id="1_7xkeb"]
-[ext_resource type="Texture2D" uid="uid://bbfl43fqpsvey" path="res://Assets/Sprites/Player/Light.png" id="2_ul8ox"]
-[ext_resource type="Script" path="res://Scripts/point_light_2d.gd" id="4_2w8kg"]
+[ext_resource type="Script" path="res://Scripts/my_hero.gd" id="1_6a3tc"]
+[ext_resource type="Texture2D" uid="uid://yihgu78ibgyd" path="res://Assets/Sprites/Player/spr_player_idle.png" id="2_fqtrk"]
+[ext_resource type="Texture2D" uid="uid://bbfl43fqpsvey" path="res://Assets/Sprites/Player/Light.png" id="3_iqmx3"]
+[ext_resource type="Script" path="res://Scripts/point_light_2d.gd" id="4_ygx53"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_h8vtb"]
 size = Vector2(119, 75)
 
 [node name="CharacterBody2D" type="CharacterBody2D"]
-script = ExtResource("1_7xkeb")
+script = ExtResource("1_6a3tc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 rotation = 1.5708
-texture = ExtResource("1_7obyx")
+texture = ExtResource("2_fqtrk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-5, 3)
@@ -27,6 +27,6 @@ rotation = 1.56536
 scale = Vector2(0.372029, 0.479543)
 color = Color(1, 0.783833, 0.75517, 1)
 shadow_enabled = true
-texture = ExtResource("2_ul8ox")
+texture = ExtResource("3_iqmx3")
 offset = Vector2(573.845, -7.10747)
-script = ExtResource("4_2w8kg")
+script = ExtResource("4_ygx53")
