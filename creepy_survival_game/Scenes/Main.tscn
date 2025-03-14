@@ -1,3 +1,19 @@
-[gd_scene format=3 uid="uid://bui2ql23hluso"]
+[gd_scene load_steps=4 format=3 uid="uid://bui2ql23hluso"]
+
+[ext_resource type="PackedScene" uid="uid://ce1ajp6icq74a" path="res://Scenes/Player/my_hero.tscn" id="1_db7ni"]
+[ext_resource type="PackedScene" uid="uid://bcgmm3kwwoixs" path="res://Scenes/testFloor.tscn" id="2_lukw2"]
+[ext_resource type="PackedScene" uid="uid://d3wfe3xb864gl" path="res://Scenes/Furniture/small_dresser.tscn" id="3_gmco7"]
 
 [node name="Main" type="Node"]
+
+[node name="testFloor" parent="." instance=ExtResource("2_lukw2")]
+show_behind_parent = true
+position = Vector2(16, 62)
+
+[node name="RigidBody2D" parent="." node_paths=PackedStringArray("pull_marker") instance=ExtResource("3_gmco7")]
+position = Vector2(189, -58)
+pull_marker = NodePath("../CharacterBody2D/puller/pull_marker")
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("1_db7ni")]
+
+[editable path="CharacterBody2D"]

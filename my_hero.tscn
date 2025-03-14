@@ -1,0 +1,70 @@
+[gd_scene load_steps=9 format=3 uid="uid://ce1ajp6icq74a"]
+
+[ext_resource type="Texture2D" uid="uid://yihgu78ibgyd" path="res://Assets/Sprites/Player/spr_player_idle.png" id="1_7obyx"]
+[ext_resource type="Script" path="res://Scripts/hero.gd" id="1_7xkeb"]
+[ext_resource type="Texture2D" uid="uid://bbfl43fqpsvey" path="res://Assets/Sprites/Player/Light.png" id="2_ul8ox"]
+[ext_resource type="Script" path="res://Scripts/point_light_2d.gd" id="4_2w8kg"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_h8vtb"]
+size = Vector2(29, 41)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_1cxja"]
+b = Vector2(25, 0)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_trjpi"]
+size = Vector2(39, 44)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_k6vaq"]
+size = Vector2(33, 42)
+
+[node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
+motion_mode = 1
+script = ExtResource("1_7xkeb")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.5708
+texture = ExtResource("1_7obyx")
+
+[node name="hitbox" type="CollisionShape2D" parent="."]
+position = Vector2(-7, -6)
+shape = SubResource("RectangleShape2D_h8vtb")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="PointLight2D" type="PointLight2D" parent="."]
+position = Vector2(-0.705658, 10)
+rotation = 1.56536
+scale = Vector2(0.372029, 0.479543)
+color = Color(1, 0.783833, 0.75517, 1)
+shadow_enabled = true
+texture = ExtResource("2_ul8ox")
+offset = Vector2(573.845, -7.10747)
+script = ExtResource("4_2w8kg")
+
+[node name="puller" type="Area2D" parent="." groups=["puller"]]
+collision_layer = 524288
+collision_mask = 524288
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="puller"]
+position = Vector2(-7, -6)
+shape = SubResource("SegmentShape2D_1cxja")
+
+[node name="pull_marker" type="Marker2D" parent="puller"]
+position = Vector2(33, -6)
+
+[node name="object_detector" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="object_detector"]
+position = Vector2(-3.5, -6)
+shape = SubResource("RectangleShape2D_trjpi")
+
+[node name="object_detector_close" type="Area2D" parent="object_detector"]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="object_detector/object_detector_close"]
+position = Vector2(-5.5, -6)
+shape = SubResource("RectangleShape2D_k6vaq")
+
+[connection signal="body_entered" from="object_detector" to="." method="_on_object_entered"]
+[connection signal="body_exited" from="object_detector" to="." method="_on_object_exited"]
+[connection signal="body_entered" from="object_detector/object_detector_close" to="." method="_on_object_detector_close_body_entered"]
+[connection signal="body_exited" from="object_detector/object_detector_close" to="." method="_on_object_detector_close_body_exited"]
