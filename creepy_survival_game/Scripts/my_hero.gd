@@ -7,23 +7,16 @@ var JUMP_VELOCITY = -400.0
 var movementSpeed = 3
 
 
+
 func _physics_process(delta: float) -> void:
 	rotate_player()
-	
-	# Add the gravity.
-	var velocity = Vector2 (0,0);
-	# using movement 
-	if Input.is_action_pressed ("ui_right"):
-		velocity += Vector2.RIGHT * movementSpeed
-	
-	elif Input.is_action_pressed("ui_left"):
-			velocity += Vector2.LEFT * movementSpeed
-	elif Input.is_action_pressed("ui_up"):
-			velocity += Vector2.UP * movementSpeed
-	elif Input.is_action_pressed("ui_down"):
-			velocity += Vector2.DOWN * movementSpeed
-			
-	position += velocity.normalized() * movementSpeed
+	_get_input();
+	move_and_slide()
+#Function is used to create diagonal movement
+func _get_input():
+	var  input_direction = Input.get_vector("ui_left", "ui_right", "ui_up", "ui_down");
+	velocity = input_direction * SPEED;
+
 
 
 
