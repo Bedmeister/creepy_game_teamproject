@@ -1,3 +1,5 @@
 res://Scenes/Main.tscn
 res://Scripts/my_hero.gd
-res://Scenes/house/Compact_house.tscn
+res://Scenes/Player/my_hero.tscn
+res://Scenes/Furniture/small_dresser.tscn
+res://Scenes/Furniture/bathtub.tscn

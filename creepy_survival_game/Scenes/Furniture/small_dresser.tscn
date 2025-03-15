@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scenes/Furniture/furniture.gd" id="1_nob3r"]
 
 [node name="small_dresser" type="RigidBody2D" groups=["Furniture"]]
-mass = 20.008
+mass = 0.001
 script = ExtResource("1_nob3r")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://ce1ajp6icq74a"]
+[gd_scene load_steps=7 format=3 uid="uid://ce1ajp6icq74a"]
 
 [ext_resource type="Texture2D" uid="uid://yihgu78ibgyd" path="res://Assets/Sprites/Player/spr_player_idle.png" id="1_7obyx"]
 [ext_resource type="Script" path="res://Scripts/my_hero.gd" id="1_fvkqk"]
@@ -10,12 +10,6 @@ size = Vector2(29, 41)
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_1cxja"]
 b = Vector2(25, 0)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_trjpi"]
-size = Vector2(39, 44)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_k6vaq"]
-size = Vector2(33, 42)
 
 [node name="CharacterBody2D" type="CharacterBody2D" groups=["player"]]
 motion_mode = 1
@@ -51,22 +45,3 @@ shape = SubResource("SegmentShape2D_1cxja")
 
 [node name="pull_marker" type="Marker2D" parent="puller"]
 position = Vector2(33, -6)
-
-[node name="object_detector" type="Area2D" parent="."]
-collision_layer = 262144
-collision_mask = 262144
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="object_detector"]
-position = Vector2(-3.5, -6)
-shape = SubResource("RectangleShape2D_trjpi")
-
-[node name="object_detector_close" type="Area2D" parent="object_detector"]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="object_detector/object_detector_close"]
-position = Vector2(-5.5, -6)
-shape = SubResource("RectangleShape2D_k6vaq")
-
-[connection signal="area_entered" from="object_detector" to="." method="_on_furniture_detected"]
-[connection signal="area_exited" from="object_detector" to="." method="_on_furniture_left"]
-[connection signal="body_entered" from="object_detector/object_detector_close" to="." method="_on_object_detector_close_body_entered"]
-[connection signal="body_exited" from="object_detector/object_detector_close" to="." method="_on_object_detector_close_body_exited"]
