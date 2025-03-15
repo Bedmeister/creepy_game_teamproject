@@ -1,8 +1,9 @@
 [gd_scene load_steps=6 format=3 uid="uid://mpo6anrr0tev"]
 
-[ext_resource type="Texture2D" uid="uid://dbxoco20magdv" path="res://Assets/brickTileset.png" id="1_llfcg"]
-[ext_resource type="PackedScene" uid="uid://dsrgi57nhiqa5" path="res://Scenes/hero.tscn" id="2_lggg5"]
-[ext_resource type="Script" path="res://Scripts/player.gd" id="3_70v8c"]
+[ext_resource type="Texture2D" uid="uid://uygul6e83hl5" path="res://Assets/Sprites/Tilemaps/brickTileset.png" id="1_llfcg"]
+[ext_resource type="PackedScene" uid="uid://ce1ajp6icq74a" path="res://Scenes/Player/my_hero.tscn" id="2_lggg5"]
+[ext_resource type="Script" path="res://Scripts/hero.gd" id="3_70v8c"]
+
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mviyr"]
 texture = ExtResource("1_llfcg")

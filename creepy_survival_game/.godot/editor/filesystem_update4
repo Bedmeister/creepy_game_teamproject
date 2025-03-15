@@ -1,6 +1,7 @@
 res://hero.tscn
 res://Scenes/Main.tscn
 <<<<<<< HEAD
+<<<<<<< HEAD
 res://testFloor.tscn
 =======
 res://Scenes/testFloor.tscn
@@ -10,3 +11,9 @@ res://Scenes/Furniture/small_dresser.tscn
 res://Scripts/my_hero.gd
 res://Scenes/Furniture/furniture.gd
 >>>>>>> e3ee680ccd58ca6ba12662d62e4835f197b0dbeb
+=======
+res://Scripts/my_hero.gd
+res://Scenes/Player/my_hero.tscn
+res://Scenes/Furniture/small_dresser.tscn
+res://Scenes/Furniture/bathtub.tscn
+>>>>>>> sprites
