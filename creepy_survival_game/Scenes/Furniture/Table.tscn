@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://xp7lkl4kctpw"]
+
+[ext_resource type="Script" path="res://Scripts/furniture.gd" id="1_klsi4"]
+[ext_resource type="Texture2D" uid="uid://jdr8c2mjbkam" path="res://Assets/Sprites/Furniture/spr_fur_table.png" id="1_ynbal"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+mass = 0.001
+script = ExtResource("1_klsi4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(0.999998, -1)
+scale = Vector2(0.77957, 0.824324)
+texture = ExtResource("1_ynbal")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(4.64428, 2)
+scale = Vector2(8.33805, 4.5)
+polygon = PackedVector2Array(-0.538923, -5.77778, 5.4491, -5.33333, 7.24551, -3.33333, 7.36527, 1.11111, 5.4491, 5.11111, 3.53293, 6.22222, -5.32934, 6.22222, -7.48503, 3.11111, -8.32335, -0.888888, -8.20359, -3.33333, -5.80838, -5.55556)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(-0.49999, 3.5)
+scale = Vector2(8.25, 3.65)
+polygon = PackedVector2Array(0.0606049, -7.53425, 6, -6.9863, 7.81818, -4.52055, 7.93939, 0.684932, 6, 5.89041, 0.0606049, 6.9863, -4.78788, 6.43836, -6.84848, 3.42466, -7.69697, -3.9726, -5.39394, -6.9863)

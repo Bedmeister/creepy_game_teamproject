@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://g077hwinndxi"]
+
+[ext_resource type="Texture2D" uid="uid://kgcp2kmw87gs" path="res://Assets/Sprites/Furniture/spr_fur_large_dresser.png" id="1_i8qdp"]
+[ext_resource type="Script" path="res://Scripts/furniture.gd" id="1_kjvg8"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+mass = 0.001
+script = ExtResource("1_kjvg8")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(1.99999, -1.24999)
+scale = Vector2(0.851351, 0.814189)
+texture = ExtResource("1_i8qdp")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-18.6205, 3.5)
+scale = Vector2(7.40228, 3.65)
+polygon = PackedVector2Array(2.38041, -7.26027, 8.99999, -6.9863, 8.8649, 6.9863, -4.50936, 6.71233, -4.50936, -6.9863)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(1.90735e-06, 4.5)
+scale = Vector2(6.4, 3.75)
+polygon = PackedVector2Array(-2.98023e-07, -7.6, 7.5, -7.06667, 7.5, 6, -8.28125, 6, -7.96875, -7.06667)

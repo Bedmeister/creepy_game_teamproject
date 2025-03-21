@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://rdhg74yt0kbk"]
+
+[ext_resource type="Script" path="res://Scripts/furniture.gd" id="1_je83i"]
+[ext_resource type="Texture2D" uid="uid://djojemf5lky1l" path="res://Assets/Sprites/Furniture/spr_fur_bed.png" id="1_xc6ru"]
+
+[node name="RigidBody2D" type="RigidBody2D"]
+mass = 0.001
+script = ExtResource("1_je83i")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_xc6ru")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+position = Vector2(-6.32807, -6.17824)
+rotation = -0.00405345
+scale = Vector2(10.0223, 6.47289)
+polygon = PackedVector2Array(-8.42897, -7.44097, 7.93486, -7.49276, 7.89644, 7.18371, -8.56676, 7.08039)
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Area2D"]
+position = Vector2(-4, -5)
+scale = Vector2(9.9, 6.1)
+polygon = PackedVector2Array(-8.88889, -7.86885, 7.77778, -8.03279, 7.67677, 7.04918, -8.9899, 7.21312)
