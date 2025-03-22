@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://bui2ql23hluso"]
 
 [ext_resource type="PackedScene" uid="uid://ce1ajp6icq74a" path="res://Scenes/Player/my_hero.tscn" id="1_db7ni"]
-[ext_resource type="PackedScene" uid="uid://bcgmm3kwwoixs" path="res://Scenes/testFloor.tscn" id="2_lukw2"]
+[ext_resource type="PackedScene" uid="uid://bcgmm3kwwoixs" path="res://Scenes/house/testFloor.tscn" id="2_lukw2"]
 [ext_resource type="PackedScene" uid="uid://d3wfe3xb864gl" path="res://Scenes/Furniture/small_dresser.tscn" id="3_gmco7"]
 [ext_resource type="PackedScene" uid="uid://yqas7uhq4ap1" path="res://Scenes/Furniture/bathtub.tscn" id="4_lvbdt"]
 
