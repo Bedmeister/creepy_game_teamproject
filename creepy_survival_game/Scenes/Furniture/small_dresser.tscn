@@ -1,7 +1,8 @@
 [gd_scene load_steps=3 format=3 uid="uid://d3wfe3xb864gl"]
 
 [ext_resource type="Texture2D" uid="uid://c1x3r7y1w5nh7" path="res://Assets/Sprites/Furniture/spr_fur_small_dresser.png" id="1_72u8d"]
-[ext_resource type="Script" path="res://Scenes/Furniture/furniture.gd" id="1_nob3r"]
+[ext_resource type="Script" path="res://Scripts/furniture.gd" id="1_nob3r"]
+
 
 [node name="small_dresser" type="RigidBody2D" groups=["Furniture"]]
 mass = 0.001
