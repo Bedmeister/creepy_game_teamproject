@@ -1,0 +1,30 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3od33k6udpp8"]
+
+[ext_resource type="Texture2D" uid="uid://c1x3r7y1w5nh7" path="res://Assets/Sprites/Furniture/spr_fur_small_dresser.png" id="1_72u8d"]
+[ext_resource type="Script" path="res://Scripts/furniture.gd" id="1_dvi7w"]
+
+[node name="small_dresser" type="RigidBody2D" groups=["Furniture"]]
+mass = 0.001
+script = ExtResource("1_dvi7w")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(-4.76837e-07, 0)
+scale = Vector2(0.898649, 0.837838)
+texture = ExtResource("1_72u8d")
+
+[node name="hitbox" type="CollisionPolygon2D" parent="."]
+position = Vector2(0, 0.499998)
+scale = Vector2(1, 0.885417)
+polygon = PackedVector2Array(-34, -30, 33, -30, 21, 30, -22, 30)
+
+[node name="resistance" type="Area2D" parent="." groups=["Furniture"]]
+collision_layer = 786432
+collision_mask = 786432
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="resistance" groups=["Furniture"]]
+position = Vector2(-0.131941, 1)
+scale = Vector2(0.868056, 0.820312)
+polygon = PackedVector2Array(-37, -32, 35, -32, 23, 32, -24, 32)
+
+[connection signal="area_entered" from="resistance" to="." method="_on_resistance_area_entered"]
+[connection signal="area_exited" from="resistance" to="." method="_on_resistance_area_exited"]
